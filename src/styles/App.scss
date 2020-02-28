@@ -1,0 +1,48 @@
+@import './config';
+
+.App {
+  text-align: center;
+}
+.App-header {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+button {
+  width: 30%;
+}
+.savedQuery {
+  cursor: pointer;
+  &:hover {
+    color: $hover-color;
+  }
+}
+td {
+  display: inline-block;
+}
+.table {
+  td {
+    border: none;
+  }
+}
+body {
+  margin: 0;
+  font-family: $default-font;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+img {
+  -webkit-box-shadow: $shadow;
+  -moz-box-shadow: $shadow;
+  box-shadow: $shadow;
+}
